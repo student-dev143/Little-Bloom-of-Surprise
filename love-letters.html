@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love-Letter-Form</title>
+    <link rel="stylesheet" href="love-letters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="spark-icon.png" alt="Spark Icon" class="spark-icon">
+           <span id="brand-name">Birthday Surprise</span>
+        </div>
+             <div class="right">
+            <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+       <a href="how-it-works.html">How it works</a>
+        </div>
+             <i class="ri-more-2-fill" id="menuToggle"></i>
+        <div class="side-navbar" id="sideNavbar">
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="how-it-works.html">How it works</a>
+</div>
+    </nav>
+    <!-- heading -->
+     <div id="heading">
+           <!-- <span id="emoji">💌</span> -->
+      <h1>Love Letter</h1>
+      <h2>Some feelings are meant to be written, not just felt.✨
+Put your heart into words and make someone’s day a little more special. 🤍🌷
+</h2>
+</div>
+
+    <!-- Main content -->
+    <div id="love-letter-form">
+        <form action="submit_form.php" method="POST">
+            <label for="recipient">Who are we celebrating today?</label>
+            <input type="text" id="recipient" name="recipient" required placeholder="Enter name">
+
+             <label for="sender">Who’s about to get something special? </label>
+            <input type="text" id="sender" name="sender" required placeholder="Enter your name">
+
+            <label for="Date Of Birth">Date Of Birth</label>
+            <input type="date" id="dob" name="Date" id="" placeholder="Enter Date of birth">
+
+            <label for="message">💌What’s on your heart?</label>
+            <textarea id="message" name="message" rows="5"maxlength="850" required placeholder="Enter your message from your heart"></textarea>
+
+            <button type="submit" id="submit">Send Love Letter</button>
+        </form>
+        <div id="generated-link" style="display: none;">
+    <p>Your surprise link is ready! ✨</p>
+
+    <input type="text" id="link-output" readonly>
+
+    <button id="copy-btn">Copy Link</button>
+</div>
+</div>
+</body>
+<script src="love-letter.js"></script>
+</html>

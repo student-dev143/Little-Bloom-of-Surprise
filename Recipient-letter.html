@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love-Letter-Wishes</title>
+    <link rel="stylesheet" href="recipient.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+    <h1 >Wait... are you the one this letter is waiting for?</h1>
+    <div class="buttons">
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
+    </div>
+    
+    <div class="container2">
+        <h1 id="yesMessage">
+        </h1>
+        <h2 id="envelopeHint"> Tap the Envelope to Open Your Surprise 👇🏻</h2>
+        <h2 id="letterHint" style="display: none;">
+    💌 Open Your Little Love Letter ✨
+</h2>
+        <video id="gift" muted playsinline>
+    <source src="love_letter_transparent-1.webm" type="video/webm">
+</video>
+    
+          <img id="letter" src="letter-pic.png" alt="">
+
+         </div>
+    <div id="letter-content">
+    <h2>For My Favorite Person <span id="recipientName"></span>!</h2>
+    <p><span id="birthday"></span></p>
+    <p id="letterMessage"></p>
+
+    <p>With love,</p>
+    <p id="senderName"></p>
+</div>
+
+
+
+
+
+
+
+<a href="index.html" class="create-surprise-btn">
+    ✨ Create Your Own Surprise
+</a>
+
+
+
+<div class="music-widget">
+
+    <button class="music-toggle" id="musicToggle">
+        ♫
+    </button>
+
+    <div class="music-popup" id="musicPopup">
+
+        <iframe
+            src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</div>
+
+</body>
+<script src="Recipient-letter.js"></script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Who Are You?</title>
+
+    <link rel="stylesheet" href="recipient-birthdaywish.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="who-container">
+
+        <div class="small-gift">🎁</div>
+
+        <p class="question-top">A little surprise is waiting...</p>
+
+        <h1>Who Are You? 👀</h1>
+
+        <p class="subtitle">
+            Before we continue, prove that this surprise is really for you.
+        </p>
+
+        <div class="name-box">
+
+            <p class="choose-text">Choose your name</p>
+
+            <button class="name-option" id="option1"></button>
+
+            <button class="name-option" id="option2"></button>
+
+            <button class="name-option funny" id="funny-option">
+               Idiot 🤡
+            </button>
+
+        </div>
+      
+        <p id="message"></p>
+
+    </div>
+      <div class="decode-container" id="decode-screen">
+
+    <div class="lock-icon">🔐</div>
+
+    <p class="decode-small">A secret is waiting...</p>
+
+    <h1>Decode the Surprise</h1>
+
+    <p class="decode-text">
+        Enter the secret code to unlock what is waiting for you.
+    </p>
+
+    <div class="code-box">
+        <input type="text" id="secret-code" placeholder="Enter secret code">
+        <button id="unlock-btn">Unlock ✨</button>
+    </div>
+
+    <p id="decode-message"></p>
+
+</div>
+
+       <video class="gift-box" muted playsinline>
+    <source src="birthday_gift_blue_plaid_corrected.mp4" type="video/mp4">
+</video>
+      <img id="teddy-bear" src="teddybear.png" alt="Teddy Bear">
+       <video class="birthday-letter" autoplay muted playsinline>
+       <source src="birthday-letter-pic.webm" type="video/webm">
+     </video>
+   <video class="birthday-letter-portrait" autoplay muted playsinline>
+    <source src="letter_transparent_fixed-2.webm" type="video/webm">
+</video>
+<video id="letterSound" src="letterbackgroundsound.mp4" preload="auto" playsinline></video>
+<audio id="firework-sounds" src="birthday_video_fireworks_slower_v2-1.webm" ></audio>
+
+   <div id="letter-content">
+    <h2>Happy Birthday, <span id="recipient"></span>! ❤️</h2>
+    <p id="messageBox"></p>
+
+    <p>With love,</p>
+    <p id="sender"></p>
+</div>
+
+
+      
+
+<a href="index.html" class="create-surprise-btn">
+    ✨ Create Your Own Surprise
+</a>
+
+ <script src="recipient-birthdaywish.js"></script>
+</body>
+</html>

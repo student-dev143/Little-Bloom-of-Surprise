@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(birthday-wish-landscape.png);
+    background-size: 100% 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   min-height: 100vh;
+   background-color: #d8effb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 54px;
+}
+nav{
+    background-color:#eff7fb;
+    color: #164e70;
+      border: 1px solid rgba(123, 39, 56, 0.15);
+    padding: 1rem;
+    width: 70%;
+    height: 9vh;
+    border-radius: 50px;
+    margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  font-size: 1.2rem;
+}
+.right{
+   margin-right: 3vw;
+   display: flex;
+   gap: 2.44vw;
+}
+.left{
+   margin-left: 1vw;
+   display: flex;
+   gap: 0.25vw;
+   justify-content: center;
+   align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #164e70;
+
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #092e45;
+}
+
+.spark-icon{
+    height: 44px;
+    width: 60px;
+}
+#brand-name{
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+
+    color: #164e70;
+    
+}
+i{
+    display: none;
+}
+.birthday-form-card {
+  width: 100%;
+  max-width: 720px;
+  padding: 38px 40px 30px;
+ background: transparent;
+    border: 1px solid #164e70 ;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(30, 70, 100, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.gift-icon {
+  width: 54px;
+  height: 54px;
+  background: #fff8df;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: #164e70;
+  font-size: 32px;
+  font-family: cursive;
+}
+
+.form-header p {
+  margin: 5px 0 0;
+  color: #657783;
+  font-size: 14px;
+}
+
+.header-heart {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #164e70;
+  font-size: 42px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 9px;
+  color: #214c68;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group label span {
+  color: #d94b4b;
+}
+
+.form-group label small {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #d9dee1;
+  border-radius: 11px;
+  background: #fff;
+  padding: 0 15px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #304b5c;
+  outline: none;
+}
+
+.form-group input,
+.form-group select {
+  height: 48px;
+}
+
+.form-group textarea {
+  height: 166px;
+  padding: 15px;
+  resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a5adb2;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #24729d;
+}
+
+.textarea-box {
+  position: relative;
+}
+
+.textarea-box span {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  color: #8b969c;
+  font-size: 11px;
+}
+
+.send-btn {
+  width: 80%;
+  height: 55px;
+  border: none;
+  border-radius: 32px;
+  background: #17608a;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 4vw;
+  margin-top: 2vh;
+}
+
+.send-btn span {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.send-btn:hover {
+  background: #124d70;
+}
+
+.form-features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding: 0 8px;
+  color: #8a959b;
+  font-size: 11px;
+}
+
+.form-features div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-features div:first-letter {
+  font-size: 18px;
+}
+
+.ri-more-2-fill{
+   font-size: 2.3rem;
+   color: rgb(181, 187, 253);
+margin-right: 3vw;
+   display: none;
+}
+@media (max-width:850px) {
+  nav{
+    background-color:transparent;
+    color: #164e70;
+      border: 1px solid rgba(123, 39, 56, 0.15);
+    padding: 1rem;
+        width: 81%;
+    height: 9vh;
+    border-radius: 50px;
+    margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  font-size: 1.2rem;
+}
+.birthday-form-card {
+        width: 71%;
+  max-width: 720px;
+  padding: 38px 40px 30px;
+ background: transparent;
+    border: 1px solid #164e70 ;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(30, 70, 100, 0.08);
+  font-family: Arial, sans-serif;
+}
+.header-heart {
+    display: none;
+}
+.right {
+    margin-right: 3vw;
+    display: flex;
+    gap: 2.88vw;
+    font-size: 1rem;
+}
+}
+@media (max-width: 700px) {
+ .left{
+      margin-left: -2vw;
+ }
+ .right {
+    margin-right: 3vw;
+    display: flex;
+    gap: 2.77vw;
+    font-size: 1rem;
+}
+.spark-icon {
+    height: 36px;
+    width: 54px;
+}
+
+    nav {
+        background-color: transparent;
+        color: #164e70;
+        border: 1px solid rgba(123, 39, 56, 0.15);
+        padding: 1rem;
+        width: 91%;
+      
+      }
+  .birthday-form-card {
+    padding: 28px 20px 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header-heart {
+    display: none;
+  }
+
+  .form-header h2 {
+    font-size: 27px;
+  }
+
+  .form-features {
+    flex-direction: column;
+    gap: 13px;
+  }
+}
+@media (max-width:550px) {
+   nav{
+    background-color:transparent;
+    color: #164e70;
+      border: 1px solid rgba(123, 39, 56, 0.15);
+    padding: 1rem;
+       width: 85%;
+    height: 9vh;
+    border-radius: 50px;
+    margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  font-size: 1.2rem;
+}
+.right{
+          margin-right: 1vw;
+        display: flex;
+        gap: 2vw;
+        font-size: 0.77rem;
+}
+#brand-name {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 1rem;
+    font-weight: 750;
+  }
+      .spark-icon {
+        height: 35px;
+        width: 43px;
+    }
+.birthday-form-card {
+        width: 71%;
+  max-width: 720px;
+         padding: 34px 31px 30px;
+ background: transparent;
+    border: 1px solid #164e70 ;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(30, 70, 100, 0.08);
+  font-family: Arial, sans-serif;
+}
+    .form-header h2 {
+        font-size: 22px;
+    }
+    .form-header p {
+    margin: 5px 0 0;
+    color: #657783;
+    font-size: 13px;
+}
+.gift-icon {
+    width: 27px;
+    height: 39px;
+    background: #fff8df;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+
+
+}
+
+@media (max-width:483px) {
+   nav{
+    padding: 1rem;
+       width: 85%;
+    height: 9vh;
+    border-radius: 50px;
+    margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  font-size: 1.2rem;
+}
+.right{
+         display:none ;
+}
+
+#brand-name {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 1rem;
+    font-weight: 750;
+  }
+      .spark-icon {
+        height: 35px;
+        width: 43px;
+    }
+.birthday-form-card {
+        width: 80%;
+  max-width: 720px;
+         padding: 34px 17px  30px;
+ background: transparent;
+    border: 1px solid #164e70 ;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(30, 70, 100, 0.08);
+  font-family: Arial, sans-serif;
+}
+    .form-header h2 {
+        font-size: 22px;
+    }
+    .form-header p {
+    margin: 5px 0 0;
+    color: #657783;
+    font-size: 13px;
+}
+.gift-icon {
+    width: 27px;
+    height: 39px;
+    background: #fff8df;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+.ri-more-2-fill{
+   display: block;
+}
+
+
+}
+
+
+@media (max-width:395px) {
+   nav{
+    padding: 1rem;
+       width: 85%;
+    height: 9vh;
+    border-radius: 50px;
+    margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  font-size: 1.2rem;
+}
+.right{
+         display:none ;
+}
+
+#brand-name {
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 1rem;
+    font-weight: 750;
+  }
+      .spark-icon {
+        height: 35px;
+        width: 43px;
+    }
+.birthday-form-card {
+        width: 80%;
+  max-width: 720px;
+         padding: 34px 17px  30px;
+ background: transparent;
+    border: 1px solid #164e70 ;
+  border-radius: 22px;
+  box-shadow: 0 15px 45px rgba(30, 70, 100, 0.08);
+  font-family: Arial, sans-serif;
+}
+    .form-header h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .form-header p {
+    margin: 5px 0 0;
+    color: #657783;
+    font-size: 13px;
+}
+.gift-icon {
+    width: 27px;
+    height: 39px;
+    background: #fff8df;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+            display: none;
+}
+.ri-more-2-fill{
+   display: block;
+}
+
+
+}
+
+
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    position: fixed;
+    top: 0;
+    right: -260px;
+
+    width: 240px;
+    height: 100vh;
+    padding: 110px 25px 25px;
+
+    background: linear-gradient(160deg, #FDF8FA, #EAF6FC, #D8EFFB);
+
+    border-left: 1px solid rgba(164, 119, 139, 0.2);
+    border-radius: 25px 0 0 25px;
+
+    box-shadow: -5px 0 25px rgba(107, 83, 97, 0.15);
+
+    z-index: 999;
+    transition: right 0.4s ease;
+}
+
+.side-navbar a {
+    text-decoration: none;
+    color: #6B5361;
+    font-family: "Geist Pixel", sans-serif;
+    font-size: 18px;
+
+    padding: 14px 16px;
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.side-navbar a:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #A4778B;
+    transform: translateX(5px);
+}
+
+.side-navbar.active {
+    right: 0;
+}
+
+#menuToggle {
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#menuToggle:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 651px) {
+    .side-navbar,
+    #menuToggle {
+        display: none;
+    }
+}

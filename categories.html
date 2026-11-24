@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Surprise</title>
+
+    <link rel="stylesheet" href="birthday.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <nav>
+        <div class="left">
+            <img src="spark-icon.png" alt="Spark Icon" class="spark-icon">
+            <span id="brand-name">Birthday Surprise</span>
+        </div>
+
+         <div class="right">
+            <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+       <a href="how-it-works.html">How it works</a>
+        </div>
+
+           <i class="ri-more-2-fill" id="menuToggle"></i>
+        <div class="side-navbar" id="sideNavbar">
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="how-it-works.html">How it works</a>
+</div>
+    </nav>
+
+      <div id="category-main">
+      <span id="choose-surprise">Choose Your Surprise</span>
+      <span id="choose-surprise-subtitle">"What would you like to create?"</span> 
+      <span id="surprise-para">Pick something special to make their day unforgettable!</span>
+      <div id="categories-container">
+        <a href="love-letters.html" class="love-letters-link">
+          <div class="box">
+            <img class="category-pics" id="letterpic" src="images/Letterpic.png" alt="Category 1">
+            <span class="box-text">Love Letters</span>
+            <span class="box-subtext">Write something from your heart</span>
+          </div>
+        </a>
+       <a href="birthday-wishes.html" class="love-letters-link"> <div class="box">
+              <img class="category-pics" id="cakepic" src="images/cakepic.png" alt="Category 2">
+            <span class="box-text">Birthday Wish</span>
+           <span class="box-subtext" id="cake-subtext">Create a special birthday message</span>
+        </div> </a>
+        <a href="#" class="love-letters-link">
+          <div class="box" id="memory-box">
+            <img class="category-pics" id="memorypic" src="images/memorypic.png" alt="Category 3">
+            <span class="box-text">Memory Book</span>
+            <span class="box-subtext">Turn your memories into something beautiful</span>
+          </div>
+        </a>
+        <a href="#" class="love-letters-link">
+          <div class="box" id="custom-box">
+            <img class="category-pics" id="customsurprisepic" src="images/customSurprise.png" alt="Category 4">
+            <span class="box-text">Custom Surprise</span>
+            <span class="box-subtext">Create your own surprise</span>
+          </div>
+        </a>
+      </div>
+
+    <script src="birthday.js"></script>
+
+</body>
+</html>
