@@ -20,7 +20,8 @@ btn.addEventListener("click", function (e) {
     const secretCode = inputs[2].value;
     const senderMsg = textarea.value;
 
-  const link = `${window.location.origin}/recipient-birthdaywish.html?recipient=${encodeURIComponent(recipientName)}&sender=${encodeURIComponent(senderName)}&code=${encodeURIComponent(secretCode)}&message=${encodeURIComponent(senderMsg)}`;
+  const link = `https://student-dev143.github.io/Little-Bloom-of-Surprise/recipient-birthdaywish.html?recipient=${encodeURIComponent(recipientName)}&sender=${encodeURIComponent(senderName)}&code=${encodeURIComponent(secretCode)}&message=${encodeURIComponent(senderMsg)}`;
+  
     form.style.display = "none";
     document.querySelector(".form-features").style.display = "none";
 
