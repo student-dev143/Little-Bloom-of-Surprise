@@ -18,8 +18,8 @@ const  recipientName = RecipientName.value;
 const  senderName = SenderName.value;
 const  dobName = DobName.value;
 const  senderMsg = SenderMsg.value;
- const link = `${window.location.origin}/Recipient-letter.html?recipient=${encodeURIComponent(recipientName)}&sender=${encodeURIComponent(senderName)}&dob=${encodeURIComponent(dobName)}&message=${encodeURIComponent(senderMsg)}`;
-  document.querySelector("form").style.display = "none";
+ const link = `https://student-dev143.github.io/Little-Bloom-of-Surprise/Recipient-letter.html?recipient=${encodeURIComponent(recipientName)}&sender=${encodeURIComponent(senderName)}&dob=${encodeURIComponent(dobName)}&message=${encodeURIComponent(senderMsg)}`;
+document.querySelector("form").style.display = "none";
 
 const generatedLink = document.querySelector("#generated-link");
 generatedLink.style.display = "block";
